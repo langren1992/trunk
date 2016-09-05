@@ -1,0 +1,14 @@
+[
+  { "id": 1, "text": "权限管理", "state": "closed","leaf":false,"iconCls": "icon-hamburg-special","children": [
+    { "id": 11, "text": "组织管理", "pid": 1,"leaf":true,"href":"pages/authority/organization.html" ,"iconCls":"icon-standard-chart-organisation"},
+    { "id": 12, "text": "用户管理", "pid": 1 ,"leaf":true,"href":"pages/authority/user.html","iconCls":"icon-standard-user-add"},
+    { "id": 13, "text": "资源管理", "pid": 1 ,"leaf":true,"href":"pages/authority/resource.html","iconCls":"icon-hamburg-project"},
+    { "id": 14, "text": "角色管理", "pid": 1 ,"leaf":true,"href":"pages/authority/role.html","iconCls":"icon-cologne-customers"}
+  ] },
+
+  { "id": 2, "text": "系统管理", "state": "closed","leaf":false,"iconCls": "icon-hamburg-config", "children": [
+    { "id": 21, "text": "定时器配置", "pid": 2 ,"href":""},
+    { "id": 22, "text": "数据字典", "pid": 2 ,"iconCls":"icon-standard-book-open","href":""},
+    { "id": 23, "text": "站内消息", "pid": 2 ,"iconCls":"icon-hamburg-contact","href":""}
+  ] }
+]
