@@ -22,7 +22,6 @@
 		.s-btn-downarrow{
 			background:none;
 		}
-
 	</style>
 
 	<script type="text/javascript">
@@ -89,26 +88,45 @@
 						</tr>
 					</table>
 				</div>
-				<form style="padding:5px;">
-					<table>
-						<tr>
-							<td style="width: 25%"><label>部门名称：<input class="easyui-textbox" type="text" style="width: 60%"></label></td>
-							<td style="width: 25%"><label>部门编码：<input class="easyui-textbox" type="text" style="width: 60%"></label></td>
-							<td style="width: 25%"><label>上级部门：<input class="easyui-textbox" type="text" style="width: 60%"></label></td>
-							<td style="width: 25%"><label>上级部门名称：<input class="easyui-textbox" type="text" style="width: 60%"></label></td>
-
+				<form>
+					<table cellspacing="10" style="margin:0 auto">
+						<tr style="text-align: right">
+							<td>资源名称：</td>
+							<td><input class="easyui-textbox" type="text" name="resName"  id="dlg_resName"   /></td>
+							<td>父级资源名称：</td>
+							<td><input class="easyui-textbox" type="text" name="resParentName" id="dlg_resParentName"  /></td>
+							<td>资源类型：</td>
+							<td><input class="easyui-textbox" type="text" name="resType" id="dlg_resType"  /></td>
 						</tr>
-						<!--<tr style="text-align: right;">-->
-							<!--<td style="width: 12%;">所在省：</td>-->
-							<!--<td style="width: 12%"><input class="easyui-textbox" type="text" style="width: 100%;" data-options="iconWidth: 22,iconCls:'icon-add'"></input></td>-->
-							<!--<td style="width: 12%">所在市：</td>-->
-							<!--<td style="width: 12%"><input class="easyui-textbox" type="text" style="width: 100%;"/></td>-->
-							<!--<td style="width: 12%">所在区/县：</td>-->
-							<!--<td style="width: 12%"><input class="easyui-textbox" type="text" style="width: 100%;"/></td>-->
-							<!--<td style="width: 12%">详细地址：</td>-->
-							<!--<td style="width: 12%"><input class="easyui-textbox" type="text" style="width: 100%;"/></td>-->
-						<!--</tr>-->
 
+						<tr style="text-align: right">
+							<td>资源关键字：</td>
+							<td style="text-align: left;"><input class="easyui-textbox" type="text" name="resKey" id="dlg_resKey"   /></td>
+							<td>资源路径：</td>
+							<td><input class="easyui-textbox" type="text" name="resUrl" id="dlg_resUrl"  /></td>
+							<td>是否子叶：</td>
+							<td><input class="easyui-textbox" type="text" name="resIsLeaf" id="dlg_resIsLeaf"  /></td>
+						</tr>
+						<tr style="text-align: right">
+							<td>资源级别：</td>
+							<td><input class="easyui-textbox" type="text" name="resLevel" id="dlg_resLevel"  /></td>
+							<td>图标：</td>
+							<td><input class="easyui-textbox" type="text" name="resIconCls" id="dlg_resIconCls"  /></td>
+							<td>资源描述：</td>
+							<td rowspan=2><textarea id="TextArea1" name="TextArea1" style="width:167px;height:52px;resize:none" ></textarea></td>
+						</tr>
+						<tr  style="text-align: right">
+							<td>创建者：</td>
+							<td><input class="easyui-textbox" type="text" name="createUser" id="dlg_createUser"  /></td>
+							<td>创建时间：</td>
+							<td><input class="easyui-datebox" type="text" name="createDate" id="dlg_createDate"  /></td>
+						</tr>
+						<tr  style="text-align: right">
+							<td>最近更新者：</td>
+							<td><input class="easyui-textbox" type="text" name="updateUser" id="dlg_updateUser"  /></td>
+							<td>最近更新时间：</td>
+							<td><input class="easyui-datebox" type="text" name="updateDate" id="dlg_updateDate"  /></td>
+						</tr>
 					</table>
 				</form>
 			</div>
